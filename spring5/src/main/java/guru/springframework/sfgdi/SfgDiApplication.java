@@ -1,11 +1,10 @@
 package guru.springframework.sfgdi;
 
-import ch.qos.logback.core.db.dialect.MySQLDialect;
+
 import guru.springframework.sfgdi.controllers.ConstructorInjectedController;
 import guru.springframework.sfgdi.controllers.MyController;
 import guru.springframework.sfgdi.controllers.PropertyInjectedController;
 import guru.springframework.sfgdi.controllers.SetterInjectedController;
-import javafx.application.Application;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -22,7 +21,6 @@ public class SfgDiApplication {
 		System.out.println(greeting);
 
 		System.out.println("-------------------Property");
-
 		PropertyInjectedController propertyInjectedController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
 		System.out.println(propertyInjectedController.getGreeting());
 
