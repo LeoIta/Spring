@@ -9,9 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class ConstructorInjectedControllerTest {
 
     ConstructorInjectedController controller;
+
     @BeforeEach
     void setUp() {
-
         controller = new ConstructorInjectedController(new GreetingServiceImpl());
     }
 

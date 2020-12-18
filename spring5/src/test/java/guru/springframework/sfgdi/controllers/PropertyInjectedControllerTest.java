@@ -10,10 +10,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class PropertyInjectedControllerTest {
 
     PropertyInjectedController controller;
+
     @BeforeEach
     void setUp(){
         controller = new PropertyInjectedController();
-
         controller.greetingService = new GreetingServiceImpl();
     }
 
