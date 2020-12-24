@@ -1,6 +1,6 @@
 package guru.springframework.sfgdi;
 
-import guru.springframework.sfgdi.controllers.*;
+import guru.springframework.sfgdi.controllers.MyController;
 import guru.springframework.sfgdi.examplebeans.FakeDataSource;
 import guru.springframework.sfgdi.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
